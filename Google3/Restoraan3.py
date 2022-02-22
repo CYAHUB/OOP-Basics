@@ -1,5 +1,5 @@
 class restoraan():
-    def __init__(self,k_restoraani_nimi="fuck you",k_soogi_tyyp="No food for you!"):
+    def __init__(self,k_restoraani_nimi,k_soogi_tyyp):
         self.restoraani_nimi = k_restoraani_nimi
         self.soogi_tyyp = k_soogi_tyyp
 

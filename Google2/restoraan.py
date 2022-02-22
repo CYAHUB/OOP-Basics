@@ -1,18 +1,13 @@
-class restoraan():
-    restoraani_nimi = 'Aken'
-    soogi_tyyp = 'Error'
-    avatud = 'Avatud'
+class Restoraan:
+    restoraan_nimi = ""
+    soogi_tyyp = ""
 
-    def kirjelda_restoraan(self, restoraani_nimi, soogi_tyyp):
-        print('Restoraan '+ str(self.restoraani_nimi) + ' pakub ' + str(self.soogi_tyyp))
+    def kirjelda_restoraan(self):
+        """Kirjeldab restoraani nime ja pakub soogi_tüüpi"""
 
-    def ava_restoraan(self, avatud):
-        print('Restoraan on avatud')
+        kirj_tekst = self.restoraan_nimi + " pakub " + self.soogi_tyyp
+        print(kirj_tekst)
 
-    def info(self):
-        print(self.restoraani_nimi)
-        print(self.soogi_tyyp)
-        print(self.avatud)
-
-Restoraan = restoraan()
-Restoraan.info()
+    def ava_restoraan(self):
+        """Prindib restoraani nime ja avab restoraani"""
+        print(self.restoraan_nimi, "on avatud!")
